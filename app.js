@@ -4,8 +4,8 @@ dataContainer.innerHTML = '<div class="loading">Loading...</div>';
 const form = document.querySelector("#form");
 const inputSearch = document.querySelector("#inputSearch");
 
-// const searchBtn = document.querySelector("#search");
-form.addEventListener("submit", async (e) => {
+const searchBtn = document.querySelector("#search-btn");
+searchBtn.addEventListener("click", async (e) => {
   e.preventDefault();
 
   try {
@@ -13,7 +13,7 @@ form.addEventListener("submit", async (e) => {
     //this will clear the existing search
     document.querySelector(".movies").innerHTML = "";
 
-    const userInput = form.elements.inputSearch.value;
+    const userInput = inputSearch.value;
     const response = await axios.get(
       ` https://api.tvmaze.com/search/shows?q=${userInput}`
     );
@@ -43,7 +43,7 @@ form.addEventListener("submit", async (e) => {
       form.reset();
     });
   } catch (error) {
-    dataContainer.innerHTML = `<div class="loading">Error fetching data. Please try again.</div>`;
+    // dataContainer.innerHTML = `<div class="loading">Error fetching data. Please try again.</div>`;
   }
 });
 // Function to handle the click event on movie links
