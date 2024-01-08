@@ -1,0 +1,358 @@
+.imdb-header {
+    background-color: #121212;
+    /* IMDb's background color */
+    background-color: #121212;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.search-options-dropdown {
+    margin-right: 21px;
+    width: 200px;
+}
+
+#search-option {
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+}
+
+/* Search bar and button styling */
+.search-bar {
+    display: flex;
+}
+
+#inputSearch {
+    padding: 8px;
+    margin-right: 5px;
+    width: 200px;
+}
+
+#search-btn {
+    padding: 8px 12px;
+    background-color: #f5c518;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+/* Sign language dropdown styling */
+.sign-language-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Header styling */
+.imdb-header {
+    background-color: #121212;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header {
+    background-color: #272727;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    color: #FFD700;
+
+}
+
+
+
+.dropbtn {
+    background-color: #fff;
+    /* Set the button background color */
+    color: #000;
+    /* Set the button text color */
+    padding: 8px 12px;
+    /* Add padding to the button */
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* Set the dropdown background color */
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000;
+    /* Set the dropdown link color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+s .dropdown-content a:hover {
+    background-color: #ddd;
+    /* Set the hover background color */
+}
+
+/* Show the dropdown on hover */
+.sign-language-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.movies {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(178, 178, 41);
+}
+
+.movies li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background: #272727f5;
+}
+
+.movies li img {
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+.celebs li img {
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+.movies h2 {
+    padding: 2rem, 1rem;
+    max-width: 800px;
+    width: 350px;
+    margin: 0.5rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(178, 178, 41);
+}
+
+.movies li h2 {
+    color: white;
+    font-size: 1.8em;
+    padding: 15px 10px 0;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.movies.search-result {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background: #272727f5;
+    color: rgb(178, 178, 41);
+}
+
+#show-details {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    background-color: #1C1C1C;
+    /* have to ask about this.i want to hide show detail in landing page */
+    /* background-color: darkslateblue; */
+    border-radius: 10px;
+}
+
+#person-details {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    background-color: #1C1C1C;
+    /* have to ask about this.i want to hide show detail in landing page */
+    /* background-color: darkslateblue; */
+    border-radius: 10px;
+}
+
+#show-details h2 {
+    padding: 2rem, 1rem;
+    max-width: 800px;
+    width: 350px;
+    margin: 0.5rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(178, 178, 41);
+}
+
+#show-details li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #dddfe3;
+    /* background-color: var(--darkest); */
+
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+
+}
+
+#show-details li img {
+    align-items: center;
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+
+#person-details h2 {
+    padding: 2rem, 1rem;
+    max-width: 800px;
+    width: 350px;
+    margin: 0.5rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(178, 178, 41);
+}
+
+#person-details li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #dddfe3;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+
+}
+
+#person-details li img {
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+
+
+
+#navBar {
+    /* background-color: #272727; */
+    /* Dark gray or black */
+    padding: 10px;
+    text-align: center;
+    color: #FFD700;
+    /* Gold/Yellow for header and navBar text */
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+#navBar ul {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 5px;
+    gap: 2px;
+    color: #FFD700;
+    /* Gold/Yellow for nav items */
+}
+
+#navBar li {
+    cursor: pointer;
+}
+
+/* #navBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 0);
+    /* Yellow background color */
+/* padding: 10px; }  */
+
+
+#show-details #navBar li {
+    cursor: pointer;
+    color: black;
+    background-color: rgb(148, 148, 59);
+    /* Black text color */
+}
+
+/* working on people search or celeb search look */
+.celebs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(178, 178, 41);
+}
+
+.celebs li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background: #272727f5;
+}
+
+.celebs li img {
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+.celebs h2 {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 250px;
+    margin: 0.5rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(178, 178, 41);
+}
+
+.celebs li h2 {
+    color: white;
+    font-size: 1.8em;
+    padding: 15px 10px 0;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.celebs.celebrity-results {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background: #272727f5;
+    color: rgb(178, 178, 41);
+}

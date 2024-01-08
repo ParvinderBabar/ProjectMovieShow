@@ -5,69 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Data Fetcher</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script> -->
-    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
-<header class="imdb-header">
-    <div class="logo">
-        <img src="images/logo.jpg" alt="Logo">
-    </div>
+    <header class="imdb-header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo">
+        </div>
 
-    <div class="menu-search">
-        <div class="menu">
-            <button class="menu-btn">All</button>
-            <div class="menu-dropdown">
-                <div class="menu-option">
-                    <img src="images/film.png" alt="Option 1 Logo">
-                    <span>Option 1</span>
-                </div>
-                <div class="menu-option">
-                    <img src="images/tv-show.png" alt="Option 2 Logo">
-                    <span>Option 2</span>
-                </div>
-                <div class="menu-option">
-                    <img src="images/search-interface-symbol.png" alt="Option 3 Logo">
-                    <span>Option 3</span>
-                </div>
+
+
+        <div class="search-options-dropdown">
+            <select id="search-option" title="Select search option">
+                <option value="shows">TV Shows</option>
+                <option value="All">All</option>
+                <option value="people">Celebs</option>
+                <!-- Add more options as needed -->
+            </select>
+
+        </div>
+        <div class="search-bar">
+            <input type="text" id="inputSearch" placeholder="Search...">
+            <button id="search-btn" type="button">Search</button>
+        </div>
+
+
+        <div class="sign-language-dropdown">
+            <button class="dropbtn">Sign Language</button>
+            <div class="dropdown-content">
+                <a href="#">American Sign Language</a>
+                <a href="#">British Sign Language</a>
+                <!-- Add more sign languages as needed -->
             </div>
         </div>
-
-        <div class="search-bar">
-            <input type="text"id="inputSearch" placeholder="Search...">
-            <button id="search-btn"type="button">Search</button>
-        </div>
-    </div>
-
-    <div class="sign-language-dropdown">
-        <button class="dropbtn">Sign Language</button>
-        <div class="dropdown-content">
-            <a href="#">American Sign Language</a>
-            <a href="#">British Sign Language</a>
-            <!-- Add more sign languages as needed -->
-        </div>
-    </div>
-</header>
+    </header>
 
     <main>
         <form id="form">
-           
-            <!-- <input type="text" id="inputSearch" placeholder="SEARCH TV SHOW"> -->
-            <!-- <button>Search</button> -->
+
+            <div id="search-results" class="movies"></div>
+            <div id="celebrity-results" class="celebs"></div>
+            <div id="person-details"></div>
+            <div id="show-details">
+
         </form>
-        <div id="search-results" class="movies"></div>
-        <div id="show-details">
+
 
         </div>
-
 
         <div id="data-container" class="loading">Click "SEARCH" to load content.</div>
     </main>
 
-
-    <script src="app.js"></script>
-    <script src="all.js"></script>
+    <script src="app.js"></script>    
+    <script src="celebrity.js"></script>
 </body>
 
 </html>
